@@ -1,3 +1,5 @@
+from arquivo import *
+
 while True:
     Menu()
     opc = int(input('Digite sua escolha: '))
