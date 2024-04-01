@@ -72,21 +72,6 @@ def ler_arquivo(nome):
     finally:
         a.close()
 
-
-def cadastro(arq, item, preco):
-    try:
-        a = open(arq, 'at')
-    except:
-        print('não foi possível abrir')
-    else:
-        try:
-            a.write(f'{item}; R${preco:.2f}\n')
-        except:
-            print('erro ao inserir dado')
-        else:
-            print(f'{item} adicionado com sucesso')
-
-
 # Função CLI do Menu-inicial
 def Menu():
     print('-'*66)
@@ -99,8 +84,8 @@ def Menu():
 5. Relatórios e Estatísticas 
 6. Encerrar ''')
 
-# Função de cadastro para os canditados
-def Cadastro_Candidatos():
+# Função de  para os canditados
+def _Candidatos():
     while True:
         print()
         print('-' * 66)
